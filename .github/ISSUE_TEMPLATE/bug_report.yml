@@ -1,0 +1,68 @@
+name: Something is broken
+description: OneCamp does something it should not, or does not do something it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time. A security problem goes to the **private** report link instead, never here.
+        Remove passwords, tokens and email addresses from anything you paste below.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen again
+      placeholder: |
+        1. Open a channel
+        2. …
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: How you run OneCamp
+      options:
+        - Installed from a release (free or lifetime licence)
+        - Built from source
+        - OneCamp Cloud
+        - The live demo at onemana.dev
+    validations:
+      required: true
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition
+      options:
+        - With AI (v2.x)
+        - Without AI (v1.x)
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Shown under Admin → Health and updates, or in version.txt in the install directory.
+      placeholder: v2.38.3
+  - type: dropdown
+    id: client
+    attributes:
+      label: Where you saw it
+      multiple: true
+      options:
+        - Web browser
+        - Desktop app
+        - Phone
+        - Server or install (no screen involved)
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: For a server problem, run `make verify` and `docker compose logs --tail 200 go-service` in the install directory, and paste what looks relevant.
+      render: shell

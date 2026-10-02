@@ -15,5 +15,5 @@ for companies that cannot accept AGPL.
 | [OneCamp-desktop](https://github.com/OneMana-Soft/OneCamp-desktop) | Windows, macOS and Linux app. |
 
 - **Try it:** [live demo](https://onemana.dev), no signup.
-- **Run it:** [free for up to 25 people](https://onemana.dev/free) with a one-command installer, or build it from source.
+- **Run it:** [free licence](https://onemana.dev/free) with a one-command installer, or build it from source.
 - **Docs:** [onemana.dev/docs](https://onemana.dev/docs)
